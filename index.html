@@ -7,16 +7,17 @@
     <title>repl.it</title>
   </head>
   <body>
-    <div styl="width: 100%; height: 100%">
+    <div style="width: 100%; height: 100%">
       <div>
         <button id="example">example</button>
         <button id="cw1">cw1</button>
         <button id="cw2">cw2</button>
         <button id="cw3">cw3</button>
+        <button id="cw4">cw4 (MockAPI)</button>
       </div>
       <select id="options">
         <option value="1">1</option>
-        <option value="2">2</option>
+        <option value="2">24</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
@@ -26,22 +27,23 @@
         <option value="9">9</option>
         <option value="10">10</option>
       </select>
-      <div id="answer">
-        <div
-          id="popup-window"
-          style="
-            background-color: blue;
-            color: white;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 16px;
-            display: none;
-          "
-        >
-          Loading...
-        </div>
+      <div
+        id="popup-window"
+        style="
+          position: fixed;
+          background-color: blue;
+          color: white;
+          padding: 15px 30px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 16px;
+          display: none;
+        "
+      >
+        Loading...
       </div>
+      <div id="answer"></div>
     </div>
     <script src="script.js"></script>
   </body>
